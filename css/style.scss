@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+}
+
+#bg1 {
+  background-image: url("../img/AeQubZf.png");
+  margin: 0;
+}
+#bg2{
+  background-image: url("../img/grotte2.png");
+  margin: 0;
+  background-size: cover;
+}
+
+.grotte1{
+  background-image: url("../img/grotte1.png");
+  margin-top:50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  width: 800px;
+  height: 250px;
+  
+}
+
+.parchemin{
+background-image: url("../img/parchemin.jpeg");
+background-size: cover;
+}
+
+a{
+  text-decoration: none;
+}
+
+header {
+  height: 100vh;
+  >div{
+    li{
+      margin : 0 3px;
+      a{
+        text-decoration: none;
+        &:hover{
+          text-decoration: none;
+          color: silver;
+        }
+      }
+    }
+    nav>div {
+      height: 10%;
+      z-index: 700;
+      
+    }
+  }
+  
+}
+
+#instruction{
+  color:white;
+  font-family: fantasy;
+}
+
+#foret {
+  position: absolute;
+  top: 400px;
+  left: 750px;
+  width: 100px;
+  height: 200px;
+  background-color: rgba(0, 128, 0, 0);
+  z-index: 10;
+}
+
+.bleu {
+  background-color: rgba(1, 51, 68, 0.123);
+}
+
+#eau{
+    background-color: red;
+}
+
+
+#dragon {
+  background-image: url("../img/324326.png");
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  z-index: 400;
+
+}
+
+.profil-d{
+  background-position: 0px 192px;
+}
+
+
+#porte1{
+  position: absolute;
+  left: 462px;
+  top: 434px;
+  width: 40px;
+  height: 48px;
+  background-size: inherit;
+
+  z-index: 300;
+    &:hover{
+      background-position: 0px 70px;
+      background-image: url('../img/porte_chute_eau.png');
+    }
+}
+
+
+#porte2{
+  position: absolute;
+  left: 416px;
+  top: 604px;
+  width: 40px;
+  height: 48px;
+  background-size: inherit;
+
+  z-index: 300;
+    &:hover{
+      background-position: 0px 70px;
+      background-image: url('../img/porte_chute_eau.png');
+    }
+}
+
+
+#porte3{
+  position: absolute;
+  left: 342px;
+  top: 123px;
+  width: 40px;
+  height: 48px;
+  background-size: inherit;
+
+  z-index: 300;
+    &:hover{
+      background-position: 0px 70px;
+      background-image: url('../img/porte_chute_eau.png');
+    }
+}
+
+li {
+  list-style: none;
+}
+
+
+#canvas {
+  width: 100%;
+  position: absolute;
+  top: (10vh);
+  left: 0;
+  z-index: 200;
+  > div div {
+    // border: dashed 1px white;
+    // background-color: rgba(137, 43, 226, 0.582);
+    color: white;
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 100px;
+    color: rgba(255, 255, 255, 0);
+
+   }
+}
+
+
+#gem{
+  cursor: url("../img/diamant.gif"), auto;
+}
+
+#diamant, #bois, #eau{
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50%;
+  padding-left: 8%;
+  font-size: medium;
+}
+
+#diamant{
+  background-image: url("../img/diamant.gif");
+  background-color: rgba(0, 238, 255, 0.295);
+}
+
+#bois{
+  background-image: url("../img/bois.gif");
+  background-color: rgba(255, 145, 0, 0.295);
+}
+
+#eau{
+  background-image: url("../img/coeur.gif");
+  background-color: rgba(255, 38, 0, 0.247);
+}
+
+.build{
+  background-image: url("../img/maison1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+.build2{
+  background-image: url("../img/maison2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+#construire,#construire2 {
+  border: dashed 2px white;
+  color: white !important;
+}
+
+
+// CSS mini jeux
+
+// accessoire info
+.hache, #fleche_diamant, #fleche_eau{
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  z-index: 399;
+  align-self: flex-end;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+
+}
+
+.hache{
+  top:500px;
+  left:374px;
+  background-image: url('../img/sprite/objet2.png');
+  background-position: -66px 0px;
+}
+
+.rebond {
+  animation-name: rebond;
+  animation-timing-function: ease;
+}
+@keyframes rebond {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-50px); }
+  100% { transform: translateY(0); }
+}
