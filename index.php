@@ -1,31 +1,3 @@
-
-<!--?php
-
-try
-{
-    $bdd = new PDO('mysql:host=localhost;dbname=macitationvisuelle;charset=utf8', 'root', 'root');
-}
-catch(Exception $e)
-{
-        die('Erreur : '.$e->getMessage());
-}
-
-$param="";
-$requete = $bdd->prepare("SELECT auteur FROM image WHERE auteur LIKE '%ssi';");
-
-
-$requete->bindParam(':param', $param);
-$requete->execute();
-$resultat = $requete->fetchAll();
-
-echo '<pre>';
-print_r($resultat);
-echo '</pre>';
-
-?-->
-
-
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -48,8 +20,8 @@ echo '</pre>';
 </head>
 
 <body id=bg1>
-
-    <div id="dragon"></div>
+<!-- personnage dragon créé -->
+    <div id="dragon"></div> 
 
 <header class="container-fluid">
     <nav class="row align-items-center bg-dark pt-3">
@@ -75,9 +47,7 @@ echo '</pre>';
       <div>
     </nav>
 
-    <!-- <button id="foret" class="border-0">
-      <a href="#!"></a>
-    </button> -->
+<!-- création des portes  -->
 <div id="porte1" onclick="location.href='niveau2.php'"></div>
 <div id="porte2" data-toggle="modal" data-target="#niveau2"></div>
 <div id="porte3" onclick="location.href='niveau2.php'"></div>

@@ -1,9 +1,15 @@
 $(document).ready(function(){
 
-    $("#test").hover(function(event){
-        $(this).toggle( display );
+
+
+    $("#test").mouseenter(function(event){
+        $(this).css('opacity',1);
     })
     
+    $("#test").mouseleave(function(event){
+        $(this).css('opacity',0);
+    })
+
        
 
         // Declaration des variables 
@@ -31,7 +37,8 @@ $(document).ready(function(){
 
 
         $('.ressource').click(function(event){
-            var ressource = $('.ressource').data('matiere');
+            var ressource = $(this).data('matiere');
+            
             if (ressource === 'bois'){
                 bois++;
                 document.getElementById("bois").innerHTML = " " + bois;
