@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -21,8 +20,8 @@
 </head>
 
 <body id=bg1>
-
-    <div id="dragon"></div>
+<!-- personnage dragon créé -version2-->
+    <div id="dragon"></div> 
 
 <header class="container-fluid">
     <nav class="row align-items-center bg-dark pt-3">
@@ -48,13 +47,11 @@
       <div>
     </nav>
 
-    <!-- <button id="foret" class="border-0">
-      <a href="#!"></a>
-    </button> -->
+<!-- création des portes  -->
 <div id="porte1" onclick="location.href='niveau2.php'"></div>
 <div id="porte2" data-toggle="modal" data-target="#niveau2"></div>
 <div id="porte3" onclick="location.href='niveau2.php'"></div>
-<div id="test" class="ressource hache rebond" data-matiere="bois"></div>
+<!-- <div id="test" class="ressource hache rebond" data-matiere="bois"></div> -->
 
 
 
@@ -81,7 +78,7 @@
       <div class="col-2  col-lg-1 ressource" data-matiere="">2-2</div>
       <div class="col-2  col-lg-1 ressource" data-matiere="">2_3</div>
       <div class="col-2  col-lg-1 ressource" data-matiere="piege">2_4</div>
-      <div id="construire2" class="col-2  col-lg-1 ressource" data-matiere="">250b + 60d</div>
+      <div id="construire2" class="col-2  col-lg-1" data-matiere="">250b + 60d</div>
       <div class="col-2  col-lg-1 ressource" data-matiere="">2_6</div>
       <div class="col-2  col-lg-1 ressource" data-matiere="bois">2_7</div>
       <div class="col-2  col-lg-1 ressource" data-matiere="diamant">2_8</div>

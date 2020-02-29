@@ -218,7 +218,7 @@ li {
 // CSS mini jeux
 
 // accessoire info
-.hache, #fleche_diamant, #fleche_eau{
+.hache, .pelle, .fiole{
   position: absolute;
   width: 32px;
   height: 32px;
@@ -235,6 +235,22 @@ li {
   background-image: url('../img/sprite/objet2.png');
   background-position: -66px 0px;
 }
+
+.pelle{
+  top:500px;
+  left:374px;
+  background-image: url('../img/sprite/objet2.png');
+  background-position: -66px 0px;
+}
+
+.fiole{
+  top:500px;
+  left:374px;
+  background-image: url('../img/sprite/objet2.png');
+  background-position: -66px 0px;
+}
+
+
 
 .rebond {
   animation-name: rebond;

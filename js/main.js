@@ -1,10 +1,6 @@
 $(document).ready(function(){
 
-    $("#test").hover(function(event){
-        $(this).toggle( display );
-    })
-    
-       
+
 
         // Declaration des variables 
 
@@ -31,7 +27,8 @@ $(document).ready(function(){
 
 
         $('.ressource').click(function(event){
-            var ressource = $('.ressource').data('matiere');
+            var ressource = $(this).data('matiere');
+            
             if (ressource === 'bois'){
                 bois++;
                 document.getElementById("bois").innerHTML = " " + bois;
@@ -98,12 +95,91 @@ $(document).ready(function(){
 
 //Fonction du jeu
 
-            
+// $("#test").css('opacity',0);
+
+
+// $("#test").mouseenter(function(event){
+//     $(this).css('opacity',1);
+// })
+
+// $("#test").mouseleave(function(event){
+//     $(this).css('opacity',0);
+// })
+
+
+
+//au survole de la souris ajouter la div pelle, hache ou fiole en fonction de la ressource.
+
+
+// $(".ressource").mouseenter(function(event){
+
+// var ressource2 = $(this).data('matiere');
+
+// switch (ressource2) {
+
+//     case bois :
+//         $(this).addClass('.hache .rebond').css('opacity',1);
+//         break;
+
+//     case diamant :
+//         $(this).addClass('.pelle .rebond').css('opacity',1);
+//         break;
+
+//     case eau :
+//         $(this).addClass('.fiole .rebond').css('opacity',1);
+//         break;
+
+//     // case piege :
+//     //     $(this).addClass('interogation');
+//     //     break;
+
+//     default:
+//         break;
+// }
+
+// });
+
+// $(".ressource").mouseleave(function(event){
+//     $(this).css('opacity',0);
+// });
+
+$(".ressource").mouseenter(function(event){
+
+var ressource2 = $(this).data('matiere');
+
+switch (ressource2) {
+
+    case bois :
+        $(this).addClass('.hache .rebond').css('opacity',1);
+        break;
+
+    case diamant :
+        $(this).addClass('.pelle .rebond').css('opacity',1);
+        break;
+
+    case eau :
+        $(this).addClass('.fiole .rebond').css('opacity',1);
+        break;
+
+    // case piege :
+    //     $(this).addClass('interogation');
+    //     break;
+
+    default:
+        break;
+}
+
+});
+
+$(".ressource").mouseleave(function(event){
+    $(this).css('opacity',0);
 });
 
 
 
 
+            
+});
 
 
 

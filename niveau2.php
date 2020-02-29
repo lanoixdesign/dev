@@ -1,3 +1,31 @@
+
+<!--?php
+
+try
+{
+    $bdd = new PDO('mysql:host=localhost;dbname=macitationvisuelle;charset=utf8', 'root', 'root');
+}
+catch(Exception $e)
+{
+        die('Erreur : '.$e->getMessage());
+}
+
+$param="";
+$requete = $bdd->prepare("SELECT auteur FROM image WHERE auteur LIKE '%ssi';");
+
+
+$requete->bindParam(':param', $param);
+$requete->execute();
+$resultat = $requete->fetchAll();
+
+echo '<pre>';
+print_r($resultat);
+echo '</pre>';
+
+?-->
+
+
+
 <!DOCTYPE html>
 <html lang="fr">
 
