@@ -34,9 +34,11 @@ header {
       header > div li a:hover {
         text-decoration: none;
         color: silver; }
-  header > div nav > div {
-    height: 10%;
-    z-index: 700; }
+  header > div nav {
+    position: static; }
+    header > div nav > div {
+      height: 10%;
+      z-index: 700; }
 
 #instruction {
   color: white;
@@ -115,11 +117,9 @@ li {
   left: 0;
   z-index: 200; }
   #canvas > div div {
-    color: white;
     width: 100px;
     height: 100px;
-    margin: 0;
-    padding: 0;
+    color: white;
     text-align: center;
     line-height: 100px;
     color: rgba(255, 255, 255, 0); }
@@ -162,32 +162,26 @@ li {
   border: dashed 2px white;
   color: white !important; }
 
-.hache, #fleche_diamant, #fleche_eau {
+#hache, #pelle, #fiole {
   position: absolute;
-  width: 32px;
-  height: 32px;
+  width: 32px !important;
+  height: 32px !important;
   z-index: 399;
   align-self: flex-end;
   animation-duration: 2s;
   animation-iteration-count: infinite; }
 
-.hache {
-  top: 500px;
-  left: 374px;
+#hache {
   background-image: url("../img/sprite/objet2.png");
   background-position: -66px 0px; }
 
-.pelle {
-  top: 500px;
-  left: 374px;
+#pelle {
   background-image: url("../img/sprite/objet2.png");
-  background-position: -66px 0px; }
+  background-position: -96px -33px; }
 
-.fiole {
-  top: 500px;
-  left: 374px;
+#fiole {
   background-image: url("../img/sprite/objet2.png");
-  background-position: -66px 0px; }
+  background-position: -160px -128px; }
 
 .rebond {
   animation-name: rebond;
@@ -195,10 +189,10 @@ li {
 
 @keyframes rebond {
   0% {
-    transform: translateY(0); }
+    transform: rotateZ(0); }
   50% {
-    transform: translateY(-50px); }
+    transform: rotateZ(45deg); }
   100% {
-    transform: translateY(0); } }
+    transform: rotateZ(0); } }
 
 /*# sourceMappingURL=style.css.map */

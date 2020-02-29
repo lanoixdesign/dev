@@ -45,11 +45,15 @@ header {
         }
       }
     }
-    nav>div {
-      height: 10%;
-      z-index: 700;
+    nav{
+      position: static;
+    
+        >div {
+        height: 10%;
+        z-index: 700;
       
     }
+  }
   }
   
 }
@@ -155,11 +159,9 @@ li {
   > div div {
     // border: dashed 1px white;
     // background-color: rgba(137, 43, 226, 0.582);
-    color: white;
     width: 100px;
     height: 100px;
-    margin: 0;
-    padding: 0;
+    color: white;
     text-align: center;
     line-height: 100px;
     color: rgba(255, 255, 255, 0);
@@ -218,10 +220,10 @@ li {
 // CSS mini jeux
 
 // accessoire info
-.hache, .pelle, .fiole{
+#hache, #pelle, #fiole{
   position: absolute;
-  width: 32px;
-  height: 32px;
+  width: 32px !important;
+  height: 32px !important;
   z-index: 399;
   align-self: flex-end;
   animation-duration: 2s;
@@ -229,25 +231,22 @@ li {
 
 }
 
-.hache{
-  top:500px;
-  left:374px;
+#hache{
   background-image: url('../img/sprite/objet2.png');
   background-position: -66px 0px;
+
 }
 
-.pelle{
-  top:500px;
-  left:374px;
+#pelle{
+
   background-image: url('../img/sprite/objet2.png');
-  background-position: -66px 0px;
+  background-position: -96px -33px;
 }
 
-.fiole{
-  top:500px;
-  left:374px;
+#fiole{
+
   background-image: url('../img/sprite/objet2.png');
-  background-position: -66px 0px;
+  background-position: -160px -128px;
 }
 
 
@@ -257,7 +256,7 @@ li {
   animation-timing-function: ease;
 }
 @keyframes rebond {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-50px); }
-  100% { transform: translateY(0); }
+  0%   { transform: rotateZ(0);}
+  50%  { transform: rotateZ(45deg); }
+  100% { transform: rotateZ(0);}
 }

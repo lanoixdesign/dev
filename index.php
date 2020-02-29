@@ -48,10 +48,12 @@
     </nav>
 
 <!-- création des portes  -->
-<div id="porte1" onclick="location.href='niveau2.php'"></div>
+<!-- <div id="porte1" onclick="location.href='niveau2.php'"></div> -->
+<div id="porte1" data-toggle="modal" data-target="#niveau2"></div>
 <div id="porte2" data-toggle="modal" data-target="#niveau2"></div>
-<div id="porte3" onclick="location.href='niveau2.php'"></div>
-<!-- <div id="test" class="ressource hache rebond" data-matiere="bois"></div> -->
+<div id="porte3" data-toggle="modal" data-target="#niveau2"></div>
+<!-- <div id="porte3" onclick="location.href='niveau2.php'"></div> -->
+
 
 
 
@@ -59,78 +61,78 @@
 <div id="canvas" class="">
   
     <div id="ligne1" class="row justify-content-between align-items-center mx-0 p-0">
-      <div class="col-2  col-lg-1 ressource" data-matiere="">1-1</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="">1-2</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="diamant">1_3</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="eau">1_4</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="">1_5</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="">1_6</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="bois">1_7</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="bois">1_8</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="">1_9</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="">1_10</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="diamant">1_11</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="bois">1_12</div>
+      <div class="col-2  col-lg-1 ressource" data-matiere=""></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere=""></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere="diamant"></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere="eau"></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere=""></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere=""></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere="bois"></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere="bois"></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere=""></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere=""></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere="diamant"></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere="bois"></div>
     </div>
 
     <div id="ligne2" class="row justify-content-between align-items-center mx-0 p-0">
-      <div class="col-2  col-lg-1 ressource" data-matiere="bois">2-1</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="">2-2</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="">2_3</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="piege">2_4</div>
+      <div class="col-2  col-lg-1 ressource" data-matiere="bois"></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere=""></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere=""></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere="piege"></div>
       <div id="construire2" class="col-2  col-lg-1" data-matiere="">250b + 60d</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="">2_6</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="bois">2_7</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="diamant">2_8</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="diamant">2_9</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="">2_10</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="bois">2_11</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="bois">2_12</div>
+      <div class="col-2  col-lg-1 ressource" data-matiere=""></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere="bois"></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere="diamant"></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere="diamant"></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere="">2</div>
+      <div class="col-2  col-lg-1 ressource" data-matiere="bois">2</div>
+      <div class="col-2  col-lg-1 ressource" data-matiere="bois">2</div>
     </div>
 
     <div id="ligne3" class="row justify-content-between align-items-center mx-0 p-0">
-      <div class="col-2  col-lg-1 ressource" data-matiere="bois">3-1</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="">3-2</div>
-      <div id="construire" class="col-2  col-lg-1 " data-matiere="">8b + 3d</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="">3_4</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="">3_5</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="">3_6</div>
-      <div id="gem" class="col-2  col-lg-1 ressource" data-matiere="diamant">3_7</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="">3_8</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="">3_9</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="piege">3_10</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="bois">3_11</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="">3_12</div>
+      <div class="col-2  col-lg-1 ressource" data-matiere="bois"></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere=""></div>
+      <div id="construire" class="col-2  col-lg-1 " data-matiere="">8b + d3</div>
+      <div class="col-2  col-lg-1 ressource" data-matiere=""></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere=""></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere=""></div>
+      <div id="gem" class="col-2  col-lg-1 ressource" data-matiere="diamant"></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere=""></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere=""></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere="piege"></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere="bois"></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere=""></div>
     </div>
 
     <div id="ligne4" class="row justify-content-between align-items-center mx-0 p-0">
-      <div class="col-2  col-lg-1 ressource" data-matiere="bois">4-1</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="">4-2</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="">4_3</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="">4_4</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="eau">4_5</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="">4_6</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="bois">4_7</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="piege">4_8</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="bois">4_9</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="bois">4_10</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="bois">4_11</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="diamant">4_12</div>
+      <div class="col-2  col-lg-1 ressource" data-matiere="bois"></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere=""></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere=""></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere=""></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere="eau"></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere=""></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere="bois"></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere="piege"></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere="bois"></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere="bois"></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere="bois"></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere="diamant"></div>
     </div>
 
     <div id="ligne5" class="row justify-content-between align-items-center mx-0 p-0">
-      <div class="col-2  col-lg-1 ressource" data-matiere="piege">5-1</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="diamant">5-2</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="">5_3</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="bois">5_4</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="eau">5_5</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="">5_6</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="bois">5_7</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="bois">5_8</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="piege">5_9</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="">5_10</div>
-      <div id="construire2" class="col-1 " data-matiere="">5_11</div>
-      <div class="col-2  col-lg-1 ressource" data-matiere="">5_12</div>
+      <div class="col-2  col-lg-1 ressource" data-matiere="piege"></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere="diamant"></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere=""></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere="bois"></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere="eau"></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere=""></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere="bois"></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere="bois"></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere="piege"></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere=""></div>
+      <div id="construire2" class="col-1 " data-matiere=""></div>
+      <div class="col-2  col-lg-1 ressource" data-matiere=""></div>
     </div>
   </div>
 
